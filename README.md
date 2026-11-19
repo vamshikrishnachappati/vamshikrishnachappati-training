@@ -15,6 +15,8 @@ CSS
 
 JavaScript
 
+react.js
+
 Python
 
 SQL
