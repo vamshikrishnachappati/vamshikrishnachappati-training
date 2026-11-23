@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pratice app</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family:
+          system-ui,
+          -apple-system,
+          sans-serif;
+        background-color: #f8fafc;
+        color: #1e293b;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      .navbar {
+        background-color: #1e293b;
+        color: #ffffff;
+        padding: 16px 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-weight: 700;
+        font-size: 1.2rem;
+      }
+
+      .nav-links a {
+        color: #e2e8f0;
+        text-decoration: none;
+        margin-left: 20px;
+        font-weight: 500;
+      }
+
+      .nav-links a:hover {
+        color: #38bdf8;
+      }
+      main {
+        flex: 1;
+        max-width: 800px;
+        width: 100%;
+        margin: 32px auto;
+        padding: 0 20px;
+      }
+
+      .matter {
+        background: #ffffff;
+        padding: 24px;
+        border-radius: 10px;
+        border: 1px solid #e2e8f0;
+        margin-bottom: 28px;
+      }
+
+      .matter h1 {
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+        color: #0f172a;
+      }
+
+      .matter p {
+        color: #475569;
+        line-height: 1.6;
+      }
+      .list-section h2 {
+        font-size: 1.25rem;
+        margin-bottom: 14px;
+        color: #0f172a;
+      }
+
+      .item-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .item-list li {
+        background: #ffffff;
+        padding: 14px 18px;
+        border-radius: 8px;
+        border: 1px solid #e2e8f0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .item-tag {
+        background: #e0f2fe;
+        color: #0284c7;
+        padding: 4px 10px;
+        border-radius: 999px;
+        font-size: 0.85rem;
+        font-weight: 600;
+      }
+      footer {
+        background-color: #1e293b;
+        color: #cbd5e1;
+        text-align: center;
+        padding: 16px;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">MyApp</div>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#list">List</a>
+      </nav>
+    </header>
+    <main>
+      <section id="home" class="matter">
+        <h1>Welcome to My Practice Page</h1>
+        <p>
+          This is a simple static layout built with HTML and CSS. Below this
+          section, you can view a list of sample items—such as daily study
+          topics or tasks—ready to be connected to your JavaScript arrays later.
+        </p>
+      </section>
+      <section id="list" class="list-section">
+        <h2>Study Topics List</h2>
+        <ul class="item-list">
+          <li>
+            <span>1. HTML Structure & Semantic Tags</span>
+            <span class="item-tag">Completed</span>
+          </li>
+          <li>
+            <span>2. CSS Flexbox & Grid Layouts</span>
+            <span class="item-tag">Completed</span>
+          </li>
+          <li>
+            <span>3. JavaScript Functions & Arrays</span>
+            <span class="item-tag">In Progress</span>
+          </li>
+          <li>
+            <span>4. Array Sum with .reduce()</span>
+            <span class="item-tag">Up Next</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>Footer &copy; 2026 MyApp. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
